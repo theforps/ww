@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Регистрация</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+                <h1>metting</h1>
+            </div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#">Feature</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-buttons desktop-buttons">
+            <a href="#" class="btn-signin">Sign in</a>
+            <a href="#" class="btn-download">Download</a>
+        </div>
+        <button class="menu-toggle" aria-label="Toggle menu">
+            <span class="menu-toggle-line"></span>
+            <span class="menu-toggle-line"></span>
+            <span class="menu-toggle-line"></span>
+        </button>
+        <div class="mobile-menu">
+            <nav class="mobile-nav">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="#">Feature</a></li>
+                    <li><a href="#">Pricing</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-buttons">
+                <a href="#" class="btn-signin">Sign in</a>
+                <a href="#" class="btn-download">Download</a>
+            </div>
+        </div>
+    </header>
+    <main class="form-main-wrap">
+        <h1 class="main-center-title">Registration</h1>
+        <form class="registration-form" action="//httpbin.org/post" method="POST" autocomplete="on">
+            <div class="form-group">
+                <label for="username">Name</label>
+                <input type="text" id="username" name="username" placeholder="Иван Иванов">
+            </div>
+            <div class="form-group required">
+                <label for="email">Email <span class="star">*</span></label>
+                <input type="email" id="email" name="email" placeholder="mail@example.com" required>
+                <small class="form-hint">Requiered</small>
+            </div>
+            <div class="form-group required">
+                <label for="password">Password<span class="star">*</span></label>
+                <input type="password" id="password" name="password" placeholder="*******" required minlength="6">
+                <small class="form-hint">Requiered</small>
+            </div>
+            <div class="form-actions">
+                <button class="hero-button" type="submit">OK</button>
+                <button class="hero-button secondary" type="reset">Drop</button>
+            </div>
+        </form>
+    </main>
+    <footer class="footer"><a href="../index.html">Main Page</a> | <a href="grid.html">RAM Gallery</a></footer>
+    <script src="script.js"></script>
+</body>
+</html>
